@@ -1,6 +1,4 @@
 #!/usr/bin/python2.7
-import pdb
-
 from projEulerFuncs import savedPrimes
 
 def main():
@@ -13,7 +11,6 @@ def main():
     primes.update([x**5 for x in savedPrimes])
     count = 0
     #for i in xrange(1, 10**7 + 1):
-    pdb.set_trace() ############################## Breakpoint ##############################
     for i in xrange(1, 25 + 1):
         if i not in primes:
             vals = len([x for x in factor(i)])
