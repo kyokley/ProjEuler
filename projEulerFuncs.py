@@ -4,10 +4,10 @@ import math
 import time
 import os
 
-pythonDir = os.getenv('HOME') + '/workspace/python/'
+pythonDir = os.getcwd()
 sqrt = math.sqrt
 fact= math.factorial
-savedPrimes = [int(x) for x in open(pythonDir + "primes.txt").read().splitlines()]
+savedPrimes = [int(x) for x in open(os.path.join(pythonDir, "primes.txt")).read().splitlines()]
 savedPrimesSet = set(savedPrimes)
 
 def infCounter():
